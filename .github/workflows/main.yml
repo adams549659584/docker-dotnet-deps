@@ -14,7 +14,7 @@ jobs:
   make-docker-images:
     strategy:
       matrix:
-        dotnet: ['8.0']
+        dotnet: ['8.0','9.0']
 
     name: Build docker image for .NET ${{ matrix.dotnet }}
     runs-on: ubuntu-20.04
